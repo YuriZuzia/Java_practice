@@ -1,6 +1,6 @@
 package ru.job4j;
 /**
- *Class Calculate - вывод "Привет, мир!"
+ *Class Calculate - вывод "Привет, Мир!"
  *@author YuZuzia (mailto: zuziayv@ya.ru)
  *@version %i%, %G%
  *@since 15.03.2017 
