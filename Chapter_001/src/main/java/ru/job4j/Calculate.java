@@ -1,14 +1,14 @@
-package ru.job4j;
+п»їpackage ru.job4j;
 /**
- *Class Calculate - вывод " Привет, Мир!"
+ *Class Calculate - РІС‹РІРѕРґ " РџСЂРёРІРµС‚, РњРёСЂ!"
  *@author YuZuzia (mailto: zuziayv@ya.ru)
  *@version %i%, %G%
  *@since 15.03.2017 
 */
 public class Calculate{
 	/**
- 	 * Метод main выводит "привет мир" в консоль
-	 * @param args - аргументы из командной строки
+ 	 * РњРµС‚РѕРґ main РІС‹РІРѕРґРёС‚ "РїСЂРёРІРµС‚ РјРёСЂ" РІ РєРѕРЅСЃРѕР»СЊ
+	 * @param args - Р°СЂРіСѓРјРµРЅС‚С‹ РёР· РєРѕРјР°РЅРґРЅРѕР№ СЃС‚СЂРѕРєРё
  	 */
 	public static void main(String[] args){
 		System.out.println("Hello snowboard!");
