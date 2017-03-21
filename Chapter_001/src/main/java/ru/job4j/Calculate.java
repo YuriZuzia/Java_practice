@@ -6,6 +6,10 @@ package ru.job4j;
  *@since 15.03.2017 
 */
 public class Calculate{
+/**
+ * Метод main выводит "привет мир" в консоль
+ * @param args - аргументы из командной строки
+ */
 	public static void main(String[] args){
 		System.out.println("Hello snowboard!");
 	}
