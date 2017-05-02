@@ -7,18 +7,16 @@ import static org.junit.Assert.assertThat;
  */
 public class PointTest {
 	/**whenPointOnFunc() - проверка, когда точка принадлежит ф-ии.
+	* y = a *x + b
 	*/
 	@Test
 	public void whenPointOnFunc() {
 		int x = 2, y = 9;
 		Point point = new Point(x, y);
-		int a = 2, b = 5;
-		boolean expected = false;
-		if (point.getY() == a * x + b) {
-		 expected = true;
-		 } else {
-			expected = false;
-			}
+		int a = 2;
+		int b = 5;
+		/* 9 = 2 * 2 + 5 */
+		boolean expected = true;
 	assertThat(point.is(a, b), is(expected));
 	}
 	/**whenPointOutFunc() - проверка, когда точка не принадлежит ф-ии.
@@ -27,11 +25,10 @@ public class PointTest {
 	public void whenPointOutFunc() {
 		int x = 3, y = 9;
 		Point point = new Point(x, y);
-		int a = 2, b = 5;
+		int a = 2;
+		int b = 5;
+		/* 9 != 3 * 2 + 5 */
 		boolean expected = false;
-		if (point.getY() == a * x + b) {
-			expected = true;
-		}
 		assertThat(point.is(a, b), is(expected));
 	}
 };

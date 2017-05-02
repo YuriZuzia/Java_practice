@@ -4,7 +4,8 @@ package ru.job4j.condition;
 */
 public class Point {
 	/**class Point - положение точки.
-	*@param x, y - координаты точки
+	*@param int x - абцисса точки
+	*@param int y - ордината точки
 	*/
 	private int x, y;
 	/**@param x - инициализация объекта.
@@ -33,6 +34,6 @@ public class Point {
 	*@return - булевый ответ на вопрос
 	*/
 	public boolean is(int a, int b) {
-	return (y == a * x + b) ? true : false;
+	return y == a * x + b;
 	}
 };
