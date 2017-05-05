@@ -17,7 +17,7 @@ public class MaxTest {
 		int expected = 10;
 		assertThat(pair.max(10, 1), is(expected));
 	}
-	/**whenOneSmallerThanTwo - проверка метода max когда.
+	/**whenOneSmallerThanTwo() - проверка метода max когда.
 	*первый операнд меньше
 	*/
 	@Test
@@ -25,5 +25,13 @@ public class MaxTest {
 		Max pair = new Max();
 		int expected = 10;
 		assertThat(pair.max(1, 10), is(expected));
+	}
+	/**whenOneBiggerThanTwoThanThree() - проверка метода max когда.
+	*первый операнд больше двух других*/
+	@Test
+	public void whenOneBiggerThanTwoThanThree() {
+		Max trio = new Max();
+		int expected = 10;
+		assertThat(trio.maxOfThree(10, 1, 5), is(expected));
 	}
 };
