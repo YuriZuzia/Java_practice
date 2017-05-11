@@ -16,7 +16,7 @@ public class BoardTest {
 		/**chessBoard - тестируемый объект доски.*/
 		Board chessBoard = new Board();
 		/**expectedBoard - ожидаемая "доска".*/
-		String expectedBoard = "x x" + cr + " x " + cr + "x x" + cr;
+		String expectedBoard = String.format("x x" + cr + " x " + cr + "x x" + cr);
 		assertThat(chessBoard.paint(3, 3), is(expectedBoard));
 	}
 	/**Запуск теста.*/
@@ -25,12 +25,12 @@ public class BoardTest {
 	* в оперционных системах Unix.*/
 	public void whenWidthFiveHeghtFourOsUxThanBoard() {
 		/**cr - команда "carriage return".*/
-		String cr = "\n";
+		String cr = "\r\n";
 		/**chessBoard - тестируемый объект доски.*/
 		Board chessBoard = new Board();
 		/**expectedBoard - ожидаемая "доска".*/
-		String expectedBoard = "x x x" + cr + " x x " + cr + "x x x" + cr
-		+ " x x " + cr;
+		String expectedBoard = String.format("x x x" + cr + " x x " + cr + "x x x" + cr
+		+ " x x " + cr);
 		assertThat(chessBoard.paint(5, 4), is(expectedBoard));
 	}
 }
