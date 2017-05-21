@@ -1,7 +1,7 @@
 package ru.job4j.array;
 
 /**@author Y.Zuzia (mailto: zuziayv@ya.ru).
-*since 9.05.2017
+*since 21.05.2017
 *Turn - переупорядочивание массива */
 
 public class Turn {

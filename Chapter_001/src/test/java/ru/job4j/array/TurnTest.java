@@ -4,7 +4,7 @@ import org.junit.Test;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
-/**TurnTest - проверка работы класса Board.*/
+/**TurnTest - проверка работы класса Turn.*/
 public class TurnTest {
 	/**Запуск теста - чёт.*/
 	@Test
